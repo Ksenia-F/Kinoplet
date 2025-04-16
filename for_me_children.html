@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Киноплет</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/image/logotype/logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- header start -->
+    <header>
+        <div class="head_menu container">
+            <div class="header_left">
+                <div class="logotype">
+                    <a href="children_main.html"><img src="assets/image/logotype/logo.png" alt="логотип"></a>
+                    <div class="logo_text">
+                        <a href="children_main.html">КИНОПЛЕТ</a>
+                        <span>онлайн-кинотеатр</span>
+                    </div>
+                </div>
+                <nav>
+                    <a href="children_main.html">Главная</a>
+                    <a href="cat_mult_children.html">Мультфильмы</a>
+                    <a href="#">Мое</a>
+                </nav>
+                <button class="burger_menu_toggle" aria-label="Открыть меню">
+                    <svg class="icon_burger" width="27" height="21" viewBox="0 0 27 21" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M25.5 1H1.5C1.22386 1 1 1.22386 1 1.5C1 1.77614 1.22386 2 1.5 2H25.5C25.7761 2 26 1.77614 26 1.5C26 1.22386 25.7761 1 25.5 1Z"
+                            stroke="white" />
+                        <path
+                            d="M25.5 10H1.5C1.22386 10 1 10.2239 1 10.5C1 10.7761 1.22386 11 1.5 11H25.5C25.7761 11 26 10.7761 26 10.5C26 10.2239 25.7761 10 25.5 10Z"
+                            stroke="white" />
+                        <path
+                            d="M25.5 19H1.5C1.22386 19 1 19.2239 1 19.5C1 19.7761 1.22386 20 1.5 20H25.5C25.7761 20 26 19.7761 26 19.5C26 19.2239 25.7761 19 25.5 19Z"
+                            stroke="white" />
+                    </svg>
+                </button>
+            </div>
+
+            <div class="burger_menu">
+                <button class="burger_menu_close" aria-label="Закрыть меню">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                </button>
+
+                <nav>
+                    <a href="children_main.html">Главная</a>
+                    <a href="cat_mult_children.html">Мультфильмы</a>
+                    <a href="#">Мое</a>
+                </nav>
+            </div>
+
+            <div class="head_children">
+                <label for="toggle_popup">
+                    <img src="assets/image/children_main/logo_child/logo.png" alt="">
+                </label>
+                <input type="checkbox" id="toggle_popup" class="click_icon_child">
+                <div class="child_down">
+                    <p>Для входа во взрослый аккаунт
+                        введите пароль</p>
+                    <form action="index.html">
+                        <input type="text" name="password_child" placeholder="Пароль">
+                        <button type="submit" class="exit_child">Выйти</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- btn_arr_top start-->
+    <div class="btn_arr_top">
+        <a href="#">
+            <svg width="7" height="21" viewBox="0 0 7 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M2.87 21V3.51C2.23 4.05 1.27 4.63 -0.00999996 5.25V4.2C0.73 3.56 1.37 2.91 1.91 2.25C2.45 1.59 2.89 0.919999 3.23 0.239999H3.77C4.11 0.919999 4.55 1.59 5.09 2.25C5.63 2.91 6.27 3.56 7.01 4.2V5.25C6.39 4.95 5.84 4.66 5.36 4.38C4.88 4.08 4.47 3.79 4.13 3.51V21H2.87Z"
+                    fill="white" />
+            </svg>
+        </a>
+    </div>
+    <!-- btn_arr_top end -->
+
+
+    <!-- catalog start -->
+    <div class="for_me_children catalog_children catalog_film container">
+        <div class="title">
+            <p>КАТАЛОГ</p>
+            <span>МОЕ</span>
+        </div>
+
+        <div class="slider_film">
+            <button class="slider_new prev" autofocus>
+                <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.25 1.5L1.75 8L8.25 14.5" stroke="white" stroke-width="2" />
+                </svg>
+            </button>
+            <button class="slider_new next">
+                <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.75 1.5L7.25 8L0.75 14.5" stroke="#0D0F0E" stroke-width="2" />
+                </svg>
+            </button>
+        </div>
+
+        <div class="slider-container slider-catalogi">
+            <div class="slider-wrapper">
+                <div class="card_fil slider-card" onclick="document.location='card_mult_children.html'">
+                    <img src="assets/image/children_for_me/for_me.png" alt="">
+                    <p>Смешарики. Легенда о золотом драконе</p>
+                </div>
+                <div class="card_fil slider-card" onclick="document.location='card_mult_children.html'">
+                    <img src="assets/image/children_for_me/for_me.png" alt="">
+                    <p>Смешарики. Легенда о золотом драконе</p>
+                </div>
+                <div class="card_fil slider-card" onclick="document.location='card_mult_children.html'">
+                    <img src="assets/image/children_for_me/for_me.png" alt="">
+                    <p>Смешарики. Легенда о золотом драконе</p>
+                </div>
+                <div class="card_fil slider-card" onclick="document.location='card_mult_children.html'">
+                    <img src="assets/image/children_for_me/for_me.png" alt="">
+                    <p>Смешарики. Легенда о золотом драконе</p>
+                </div>
+                <div class="card_fil slider-card" onclick="document.location='card_mult_children.html'">
+                    <img src="assets/image/children_for_me/for_me.png" alt="">
+                    <p>Смешарики. Легенда о золотом драконе</p>
+                </div>
+            </div>
+        </div>
+        <div class="cat_cards_f">
+            <div class="card_fil" onclick="document.location='card_mult_children.html'">
+                <img src="assets/image/children_for_me/for_me.png" alt="">
+                <p>Смешарики. Легенда о золотом драконе</p>
+            </div>
+            <div class="card_fil" onclick="document.location='card_mult_children.html'">
+                <img src="assets/image/children_for_me/for_me.png" alt="">
+                <p>Смешарики. Легенда о золотом драконе</p>
+            </div>
+            <div class="card_fil" onclick="document.location='card_mult_children.html'">
+                <img src="assets/image/children_for_me/for_me.png" alt="">
+                <p>Смешарики. Легенда о золотом драконе</p>
+            </div>
+            <div class="card_fil" onclick="document.location='card_mult_children.html'">
+                <img src="assets/image/children_for_me/for_me.png" alt="">
+                <p>Смешарики. Легенда о золотом драконе</p>
+            </div>
+            <div class="card_fil" onclick="document.location='card_mult_children.html'">
+                <img src="assets/image/children_for_me/for_me.png" alt="">
+                <p>Смешарики. Легенда о золотом драконе</p>
+            </div>
+        </div>
+    </div>
+    <!-- catalog end -->
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const sliderWrapper = document.querySelector('.slider-wrapper');
+            const cards = document.querySelectorAll('.card_fil');
+            const prevButton = document.querySelector('.prev');
+            const nextButton = document.querySelector('.next');
+
+            if (!sliderWrapper || !prevButton || !nextButton || cards.length === 0) {
+                console.error('Slider elements not found');
+                return;
+            }
+
+            let currentIndex = 0;
+            let cardsPerSlide = 1;
+
+            function updateSliderLogic() {
+                const cardWidth = cards[0]?.offsetWidth + 40 || 0;
+
+                console.log(`Updated slider logic: cardsPerSlide=${cardsPerSlide}, cardWidth=${cardWidth}`);
+            }
+
+            prevButton.addEventListener('click', () => {
+                updateSliderLogic();
+                if (currentIndex > 0) {
+                    currentIndex -= cardsPerSlide;
+                } else {
+                    currentIndex = cards.length - 5 - cardsPerSlide;
+                }
+                sliderWrapper.style.transform = `translateX(-${currentIndex * (cards[0].offsetWidth + 40)}px)`;
+            });
+
+            nextButton.addEventListener('click', () => {
+                updateSliderLogic();
+                if (currentIndex < cards.length - 5 - cardsPerSlide) {
+                    currentIndex += cardsPerSlide;
+                } else {
+                    currentIndex = 0;
+                }
+                sliderWrapper.style.transform = `translateX(-${currentIndex * (cards[0].offsetWidth + 40)}px)`;
+            });
+
+            let startX = 0;
+            sliderWrapper.addEventListener('touchstart', (e) => {
+                startX = e.touches[0].pageX;
+                console.log('Touch start detected:', startX);
+            });
+
+            sliderWrapper.addEventListener('touchend', (e) => {
+                if (!startX) return;
+
+                updateSliderLogic();
+                const endX = e.changedTouches[0].pageX;
+                const diffX = startX - endX;
+
+                console.log(`Swipe detected: diffX=${diffX}`);
+
+                if (diffX > 50) {
+                    if (currentIndex < cards.length - 5 - cardsPerSlide) {
+                        currentIndex += cardsPerSlide;
+                    } else {
+                        currentIndex = 0;
+                    }
+                } else if (diffX < -50) {
+                    if (currentIndex > 0) {
+                        currentIndex -= cardsPerSlide;
+                    } else {
+                        currentIndex = cards.length - 5 - cardsPerSlide;
+                    }
+                }
+
+                sliderWrapper.style.transform = `translateX(-${currentIndex * (cards[0].offsetWidth + 40)}px)`;
+                startX = 0;
+            });
+
+            window.addEventListener('resize', () => {
+                currentIndex = 0;
+                sliderWrapper.style.transform = 'translateX(0px)';
+                updateSliderLogic();
+            });
+
+            updateSliderLogic();
+        });
+    </script>
+    
+     <script>
+        const burgerMenuToggle = document.querySelector('.burger_menu_toggle');
+        const burgerMenuClose = document.querySelector('.burger_menu_close');
+        const burgerMenu = document.querySelector('.burger_menu');
+
+        function openBurgerMenu() {
+            burgerMenu.classList.add('active');
+        }
+
+        function closeBurgerMenu() {
+            burgerMenu.classList.remove('active');
+        }
+
+        burgerMenuToggle.addEventListener('click', () => {
+            openBurgerMenu();
+        });
+
+        burgerMenuClose.addEventListener('click', () => {
+            closeBurgerMenu();
+        });
+
+        document.addEventListener('click', (event) => {
+            if (!burgerMenu.contains(event.target) && !burgerMenuToggle.contains(event.target)) {
+                closeBurgerMenu();
+            }
+        });
+    </script>
+</body>
+
+</html>

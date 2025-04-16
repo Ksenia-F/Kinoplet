@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Киноплет</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/image/logotype/logo.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <!-- header start -->
+    <header>
+        <div class="head_menu container">
+            <div class="header_left">
+                <div class="logotype">
+                    <a href="children_main.html"><img src="assets/image/logotype/logo.png" alt="логотип"></a>
+                    <div class="logo_text">
+                        <a href="children_main.html">КИНОПЛЕТ</a>
+                        <span>онлайн-кинотеатр</span>
+                    </div>
+                </div>
+                <nav>
+                    <a href="children_main.html">Главная</a>
+                    <a href="cat_mult_children.html">Мультфильмы</a>
+                    <a href="for_me_children.html">Мое</a>
+                </nav>
+                <button class="burger_menu_toggle" aria-label="Открыть меню">
+                    <svg class="icon_burger" width="27" height="21" viewBox="0 0 27 21" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M25.5 1H1.5C1.22386 1 1 1.22386 1 1.5C1 1.77614 1.22386 2 1.5 2H25.5C25.7761 2 26 1.77614 26 1.5C26 1.22386 25.7761 1 25.5 1Z"
+                            stroke="white" />
+                        <path
+                            d="M25.5 10H1.5C1.22386 10 1 10.2239 1 10.5C1 10.7761 1.22386 11 1.5 11H25.5C25.7761 11 26 10.7761 26 10.5C26 10.2239 25.7761 10 25.5 10Z"
+                            stroke="white" />
+                        <path
+                            d="M25.5 19H1.5C1.22386 19 1 19.2239 1 19.5C1 19.7761 1.22386 20 1.5 20H25.5C25.7761 20 26 19.7761 26 19.5C26 19.2239 25.7761 19 25.5 19Z"
+                            stroke="white" />
+                    </svg>
+                </button>
+            </div>
+
+            <div class="burger_menu">
+                <button class="burger_menu_close" aria-label="Закрыть меню">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                </button>
+
+                <nav>
+                    <a href="children_main.html">Главная</a>
+                    <a href="cat_mult_children.html">Мультфильмы</a>
+                    <a href="for_me_children.html">Мое</a>
+                </nav>
+            </div>
+
+            <div class="head_children">
+                <label for="toggle_popup">
+                    <img src="assets/image/children_main/logo_child/logo.png" alt="">
+                </label>
+                <input type="checkbox" id="toggle_popup" class="click_icon_child">
+                <div class="child_down">
+                    <p>Для входа во взрослый аккаунт
+                        введите пароль</p>
+                    <form action="index.html">
+                        <input type="text" name="password_child" placeholder="Пароль">
+                        <button type="submit" class="exit_child">Выйти</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- btn_arr_top start-->
+    <div class="btn_arr_top">
+        <a href="#">
+            <svg width="7" height="21" viewBox="0 0 7 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M2.87 21V3.51C2.23 4.05 1.27 4.63 -0.00999996 5.25V4.2C0.73 3.56 1.37 2.91 1.91 2.25C2.45 1.59 2.89 0.919999 3.23 0.239999H3.77C4.11 0.919999 4.55 1.59 5.09 2.25C5.63 2.91 6.27 3.56 7.01 4.2V5.25C6.39 4.95 5.84 4.66 5.36 4.38C4.88 4.08 4.47 3.79 4.13 3.51V21H2.87Z"
+                    fill="white" />
+            </svg>
+        </a>
+    </div>
+    <!-- btn_arr_top end -->
+
+    <!-- arrow_back start -->
+    <div class="arrow_back container">
+        <a href="javascript:history.back()"><svg width="14" height="27" viewBox="0 0 14 27" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M3.42 10.5C3.22 10.9267 3.02667 11.3 2.84 11.62C2.64 11.94 2.44667 12.2067 2.26 12.42L13.92 12.42V13.26L2.26 13.26C2.44667 13.4867 2.64 13.76 2.84 14.08C3.02667 14.4 3.22 14.7667 3.42 15.18H2.72C1.88 14.2067 1 13.4867 0.0799997 13.02V12.66C1 12.2067 1.88 11.4867 2.72 10.5H3.42Z"
+                    fill="#797C86" />
+            </svg>
+            назад</a>
+    </div>
+    <!-- arrow_back end -->
+
+    <!-- watch_film start-->
+    <div class="watch_serial banner container">
+        <span>ТРАНСФОРМЕРЫ: НАЧАЛО</span>
+        <img src="assets/image/card_mult/card_1.png" alt="" class="card_film_img">
+    </div>
+    <!-- watch_film start-->
+
+    <script>
+        const burgerMenuToggle = document.querySelector('.burger_menu_toggle');
+        const burgerMenuClose = document.querySelector('.burger_menu_close');
+        const burgerMenu = document.querySelector('.burger_menu');
+
+        function openBurgerMenu() {
+            burgerMenu.classList.add('active');
+        }
+
+        function closeBurgerMenu() {
+            burgerMenu.classList.remove('active');
+        }
+
+        burgerMenuToggle.addEventListener('click', () => {
+            openBurgerMenu();
+        });
+
+        burgerMenuClose.addEventListener('click', () => {
+            closeBurgerMenu();
+        });
+
+        document.addEventListener('click', (event) => {
+            if (!burgerMenu.contains(event.target) && !burgerMenuToggle.contains(event.target)) {
+                closeBurgerMenu();
+            }
+        });
+    </script>
+</body>
+
+</html>

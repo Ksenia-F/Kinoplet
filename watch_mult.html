@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Киноплет</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/image/logotype/logo.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <!-- header start -->
+    <header>
+        <div class="head_menu container">
+            <div class="header_left">
+                <div class="logotype">
+                    <a href="index.html"><img src="assets/image/logotype/logo.png" alt="логотип"></a>
+                    <div class="logo_text">
+                        <a href="index.html">КИНОПЛЕТ</a>
+                        <span>онлайн-кинотеатр</span>
+                    </div>
+                </div>
+
+                <nav>
+                    <a href="index.html">Главная</a>
+                    <div class="list_catalog">
+                        <a href="#" class="catalog_to_list">Каталог</a>
+                        <div class="dropdown">
+                            <a href="catalog_films.html"><span>—</span> Фильмы</a>
+                            <a href="catalog_serials.html"><span>—</span> Сериалы</a>
+                            <a href="catalog_mult.html"><span>—</span> Мультфильмы</a>
+                        </div>
+                    </div>
+                    <a href="subscribe.html">Подписка</a>
+                    <a href="about.html">О нас</a>
+                </nav>
+
+                <div class="btn_2_2_head btn_2_head">
+                    <a href="autorization.html">
+                        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="0.416318" y="0.667783" width="32.4509" height="32.4509" rx="4.52381" fill="#161A21"
+                                stroke="#B3A9A9" stroke-width="0.47619" />
+                            <circle cx="16.6418" cy="13.4635" r="3.6014" stroke="#A5A1B2" stroke-width="1.02897" />
+                            <path
+                                d="M24.1878 25.1255V23.7536C24.1878 21.4804 22.345 19.6377 20.0719 19.6377H13.2121C10.9389 19.6377 9.09619 21.4804 9.09619 23.7536V25.1255"
+                                stroke="#A5A1B2" stroke-width="1.02897" />
+                        </svg>
+                        <span>вход</span>
+                    </a>
+                </div>
+
+                <button class="burger_menu_toggle" aria-label="Открыть меню">
+                    <svg class="icon_burger" width="27" height="21" viewBox="0 0 27 21" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M25.5 1H1.5C1.22386 1 1 1.22386 1 1.5C1 1.77614 1.22386 2 1.5 2H25.5C25.7761 2 26 1.77614 26 1.5C26 1.22386 25.7761 1 25.5 1Z"
+                            stroke="white" />
+                        <path
+                            d="M25.5 10H1.5C1.22386 10 1 10.2239 1 10.5C1 10.7761 1.22386 11 1.5 11H25.5C25.7761 11 26 10.7761 26 10.5C26 10.2239 25.7761 10 25.5 10Z"
+                            stroke="white" />
+                        <path
+                            d="M25.5 19H1.5C1.22386 19 1 19.2239 1 19.5C1 19.7761 1.22386 20 1.5 20H25.5C25.7761 20 26 19.7761 26 19.5C26 19.2239 25.7761 19 25.5 19Z"
+                            stroke="white" />
+                    </svg>
+                    <svg class="icon_close" width="25" height="25" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                        <path d="M18 6L6 18M6 6L18 18" stroke="#ffffff" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                </button>
+            </div>
+
+            <div class="burger_menu">
+                <nav>
+                    <a href="index.html">Главная</a>
+                    <a href="catalog_films.html">Фильмы</a>
+                    <a href="catalog_serials.html">Сериалы</a>
+                    <a href="catalog_mult.html">Мультфильмы</a>
+                    <a href="subscribe.html">Подписка</a>
+                    <a href="about.html">О нас</a>
+                </nav>
+
+                <div class="burger_btn_1 btn_1">
+                    <a href="registration.html">30 дней за 0 ₽</a>
+                </div>
+
+                <div class="burger_search_box">
+                    <form class="search_form">
+                        <input type="text" name="query" placeholder="Поиск по сайту..." class="search_input">
+                        <button type="submit" class="search_submit">
+                            <svg width="21" height="22" viewBox="0 0 18 19" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11.9155 13.0466L16.7689 18.1997L17.3092 17.6909L12.4556 12.5375C13.5936 11.3386 14.293 9.71087 14.293 7.91927C14.293 4.23757 11.3394 1.24609 7.6875 1.24609C4.03563 1.24609 1.08203 4.23757 1.08203 7.91927C1.08203 11.601 4.03563 14.5924 7.6875 14.5924C9.29605 14.5924 10.7704 14.0112 11.9155 13.0466Z"
+                                    stroke="#797C86" stroke-width="0.742188" />
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="header_right">
+                <input type="checkbox" id="search_toggle" class="search_toggle">
+                <label for="search_toggle" class="hr_search">
+                    <svg width="20" height="21" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M11.9155 13.0466L16.7689 18.1997L17.3092 17.6909L12.4556 12.5375C13.5936 11.3386 14.293 9.71087 14.293 7.91927C14.293 4.23757 11.3394 1.24609 7.6875 1.24609C4.03563 1.24609 1.08203 4.23757 1.08203 7.91927C1.08203 11.601 4.03563 14.5924 7.6875 14.5924C9.29605 14.5924 10.7704 14.0112 11.9155 13.0466Z"
+                            stroke="#797C86" stroke-width="0.742188" />
+                    </svg>
+                </label>
+
+                <div class="search_box">
+                    <form class="search_form">
+                        <input type="text" name="query" placeholder="Поиск по сайту..." class="search_input">
+                        <button type="submit" class="search_submit">
+                            <svg width="21" height="22" viewBox="0 0 18 19" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11.9155 13.0466L16.7689 18.1997L17.3092 17.6909L12.4556 12.5375C13.5936 11.3386 14.293 9.71087 14.293 7.91927C14.293 4.23757 11.3394 1.24609 7.6875 1.24609C4.03563 1.24609 1.08203 4.23757 1.08203 7.91927C1.08203 11.601 4.03563 14.5924 7.6875 14.5924C9.29605 14.5924 10.7704 14.0112 11.9155 13.0466Z"
+                                    stroke="#797C86" stroke-width="0.742188" />
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+                <div class="btn_1">
+                    <a href="registration.html"> 30 дней за 0 ₽</a>
+                </div>
+                <div class="btn_2_head">
+                    <a href="autorization.html">
+                        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="0.416318" y="0.667783" width="32.4509" height="32.4509" rx="4.52381" fill="#161A21"
+                                stroke="#B3A9A9" stroke-width="0.47619" />
+                            <circle cx="16.6418" cy="13.4635" r="3.6014" stroke="#A5A1B2" stroke-width="1.02897" />
+                            <path
+                                d="M24.1878 25.1255V23.7536C24.1878 21.4804 22.345 19.6377 20.0719 19.6377H13.2121C10.9389 19.6377 9.09619 21.4804 9.09619 23.7536V25.1255"
+                                stroke="#A5A1B2" stroke-width="1.02897" />
+                        </svg>
+                        <span>вход</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- btn_arr_top start-->
+    <div class="btn_arr_top">
+        <a href="#">
+            <svg width="7" height="21" viewBox="0 0 7 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M2.87 21V3.51C2.23 4.05 1.27 4.63 -0.00999996 5.25V4.2C0.73 3.56 1.37 2.91 1.91 2.25C2.45 1.59 2.89 0.919999 3.23 0.239999H3.77C4.11 0.919999 4.55 1.59 5.09 2.25C5.63 2.91 6.27 3.56 7.01 4.2V5.25C6.39 4.95 5.84 4.66 5.36 4.38C4.88 4.08 4.47 3.79 4.13 3.51V21H2.87Z"
+                    fill="white" />
+            </svg>
+        </a>
+    </div>
+    <!-- btn_arr_top end -->
+
+    <!-- arrow_back start -->
+    <div class="arrow_back container">
+        <a href="javascript:history.back()"><svg width="14" height="27" viewBox="0 0 14 27" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M3.42 10.5C3.22 10.9267 3.02667 11.3 2.84 11.62C2.64 11.94 2.44667 12.2067 2.26 12.42L13.92 12.42V13.26L2.26 13.26C2.44667 13.4867 2.64 13.76 2.84 14.08C3.02667 14.4 3.22 14.7667 3.42 15.18H2.72C1.88 14.2067 1 13.4867 0.0799997 13.02V12.66C1 12.2067 1.88 11.4867 2.72 10.5H3.42Z"
+                    fill="#797C86" />
+            </svg>
+            назад</a>
+    </div>
+    <!-- arrow_back end -->
+
+    <!-- watch_film start-->
+    <div class="watch_serial banner container">
+        <span>ТРАНСФОРМЕРЫ: НАЧАЛО</span>
+        <img src="assets/image/card_mult/card_1.png" alt="" class="card_film_img">
+    </div>
+    <!-- watch_film start-->
+
+    <!-- footer start -->
+    <footer>
+        <div class="foot_menu container">
+            <div class="box_foot_1">
+                <div class="logo_social">
+                    <a href="index.html">
+                        <img src="assets/image/footer/image.png" alt="">
+                    </a>
+                    <div class="social">
+                        <a href="https://t.me/durashka03"><svg width="40" height="39" viewBox="0 0 40 39" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect x="1.02201" y="0.730994" width="38.4363" height="37.0196" rx="18.5098"
+                                    fill="url(#paint0_linear_518_2699)" />
+                                <rect x="1.02201" y="0.730994" width="38.4363" height="37.0196" rx="18.5098"
+                                    stroke="url(#paint1_linear_518_2699)" stroke-width="0.739183" />
+                                <path
+                                    d="M27.4314 11.4506C27.2011 11.4607 26.9866 11.5277 26.7978 11.604C26.6209 11.6751 25.9451 11.9648 24.8805 12.421C23.815 12.8776 22.4042 13.4829 20.8993 14.1296C17.8894 15.423 14.5055 16.879 12.7722 17.6242C12.707 17.6522 12.4796 17.7248 12.2382 17.9131C11.9969 18.1014 11.7402 18.4916 11.7402 18.9264C11.7402 19.277 11.9074 19.6253 12.1179 19.8332C12.3283 20.0412 12.551 20.1439 12.7418 20.2217C13.4339 20.5038 15.5803 21.3816 15.9857 21.5473C16.1283 21.984 16.9053 24.359 17.0854 24.941C17.2042 25.3251 17.3173 25.5657 17.4645 25.7566C17.5381 25.8521 17.6236 25.9358 17.7273 26.0013C17.7687 26.0275 17.8142 26.0477 17.8601 26.0663L17.8629 26.0677C17.8734 26.0719 17.8826 26.0791 17.8933 26.0829C17.9135 26.0899 17.9271 26.0908 17.9542 26.0967C18.0621 26.1315 18.171 26.1534 18.2682 26.1534C18.6826 26.1534 18.9363 25.9253 18.9363 25.9253L18.9515 25.9142L21.0833 24.0715L23.6687 26.5155C23.7051 26.567 24.0446 27.0326 24.7934 27.0326C25.2379 27.0326 25.5906 26.8096 25.817 26.5722C26.0434 26.3348 26.1845 26.0854 26.2445 25.7718V25.7705C26.3006 25.4741 28.6833 13.2504 28.6833 13.2504L28.6791 13.267C28.7489 12.9488 28.7672 12.6525 28.6902 12.3602C28.6132 12.0678 28.4104 11.7878 28.159 11.6372C27.9076 11.4866 27.6616 11.4404 27.4314 11.4506ZM27.2986 12.9297C27.2952 12.9503 27.3011 12.94 27.2958 12.9642L27.2944 12.9725L27.293 12.9808C27.293 12.9808 24.9398 25.0482 24.8528 25.5078C24.8592 25.4731 24.8301 25.5421 24.8003 25.5838C24.7581 25.5548 24.6716 25.5175 24.6716 25.5175L24.6578 25.5023L21.1261 22.1639L18.6292 24.3204L19.3721 21.3483C19.3721 21.3483 24.0156 16.5449 24.2954 16.2653C24.5206 16.0417 24.5679 15.9637 24.5679 15.8866C24.5679 15.7832 24.514 15.7082 24.3936 15.7082C24.2852 15.7082 24.1395 15.8135 24.0616 15.8631C23.0466 16.5096 18.5905 19.1049 16.593 20.2659C16.2755 20.1361 14.0702 19.234 13.3228 18.9291C13.3284 18.9267 13.3266 18.9275 13.3325 18.925C15.0662 18.1796 18.4487 16.7236 21.4581 15.4304C22.9629 14.7837 24.3748 14.178 25.4394 13.7218C26.4876 13.2726 27.2159 12.9634 27.2986 12.9297Z"
+                                    fill="white" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_518_2699" x1="1.3916" y1="19.2408" x2="39.0887"
+                                        y2="19.2408" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#141442" offset="" />
+                                        <stop offset="1" stop-color="#0400FF" />
+                                    </linearGradient>
+                                    <linearGradient id="paint1_linear_518_2699" x1="20.2402" y1="1.10058" x2="20.2402"
+                                        y2="37.381" gradientUnits="userSpaceOnUse">
+                                        <stop offset="0.278527" stop-color="#2F2F37" />
+                                        <stop offset="1" stop-color="#2F2F37" stop-opacity="0" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </a>
+                        <a href="https://vk.com/durashka3"><svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.719276" y="1.02201" width="38.4363" height="38.4363" rx="19.2182"
+                                    fill="url(#paint0_linear_518_2701)" />
+                                <rect x="0.719276" y="1.02201" width="38.4363" height="38.4363" rx="19.2182"
+                                    stroke="url(#paint1_linear_518_2701)" stroke-width="0.739183" />
+                                <path
+                                    d="M26.892 11.7402H12.983C12.1291 11.7402 11.4375 12.4318 11.4375 13.2857V27.1948C11.4375 28.0486 12.1291 28.7402 12.983 28.7402H26.892C27.7459 28.7402 28.4375 28.0486 28.4375 27.1948V13.2857C28.4375 12.4318 27.7459 11.7402 26.892 11.7402ZM24.8528 23.3056L23.4094 23.3257C23.4094 23.3257 23.098 23.3868 22.6907 23.1055C22.1506 22.7346 21.6414 21.7695 21.2442 21.8946C20.8416 22.0229 20.854 22.8915 20.854 22.8915C20.854 22.8915 20.857 23.0445 20.7651 23.1441C20.6654 23.2516 20.4699 23.2407 20.4699 23.2407H19.8231C19.8231 23.2407 18.3967 23.359 17.1395 22.0484C15.7702 20.6196 14.5601 17.8 14.5601 17.8C14.5601 17.8 14.489 17.6222 14.5647 17.5311C14.6505 17.4306 14.8815 17.4275 14.8815 17.4275L16.427 17.4198C16.427 17.4198 16.5723 17.4453 16.6774 17.5226C16.7631 17.5859 16.8118 17.7049 16.8118 17.7049C16.8118 17.7049 17.0614 18.3378 17.3929 18.9111C18.0389 20.0285 18.3387 20.2735 18.5582 20.1537C18.8781 19.9791 18.7823 18.5742 18.7823 18.5742C18.7823 18.5742 18.7885 18.0642 18.6215 17.8371C18.4917 17.6601 18.2475 17.6076 18.1409 17.5944C18.0536 17.5828 18.1958 17.3804 18.3812 17.2892C18.6594 17.1532 19.1509 17.1455 19.7312 17.1509C20.1832 17.1555 20.3138 17.1833 20.49 17.2266C21.0232 17.3556 20.8424 17.8533 20.8424 19.0471C20.8424 19.4296 20.7736 19.9675 21.0487 20.1444C21.1677 20.2209 21.4575 20.156 22.18 18.9243C22.5238 18.3401 22.7811 17.6539 22.7811 17.6539C22.7811 17.6539 22.8375 17.5318 22.9249 17.4793C23.0145 17.4252 23.135 17.4422 23.135 17.4422L24.7616 17.4321C24.7616 17.4321 25.25 17.3734 25.3296 17.5952C25.413 17.827 25.1472 18.3687 24.4827 19.255C23.3916 20.7108 23.2703 20.5756 24.1767 21.4179C25.0421 22.2223 25.2206 22.6133 25.2508 22.6627C25.6085 23.2585 24.8528 23.3056 24.8528 23.3056Z"
+                                    fill="#EFEFEF" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_518_2701" x1="1.08887" y1="20.2402" x2="38.786"
+                                        y2="20.2402" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#141442" offset="" />
+                                        <stop offset="1" stop-color="#0400FF" />
+                                    </linearGradient>
+                                    <linearGradient id="paint1_linear_518_2701" x1="19.9374" y1="1.3916" x2="19.9375"
+                                        y2="39.0887" gradientUnits="userSpaceOnUse">
+                                        <stop offset="0.278527" stop-color="#2F2F37" />
+                                        <stop offset="1" stop-color="#2F2F37" stop-opacity="0" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </a>
+                        <a href="https://wa.me/+79178872027"><svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.416541" y="1.02201" width="38.4363" height="38.4363" rx="19.2182"
+                                    fill="url(#paint0_linear_518_2703)" />
+                                <rect x="0.416541" y="1.02201" width="38.4363" height="38.4363" rx="19.2182"
+                                    stroke="url(#paint1_linear_518_2703)" stroke-width="0.739183" />
+                                <path
+                                    d="M19.6348 11.7402C14.9406 11.7402 11.1348 15.5461 11.1348 20.2402C11.1348 21.8348 11.5827 23.3215 12.3467 24.5968L11.2109 28.7402L15.4429 27.6293C16.6806 28.333 18.1094 28.7402 19.6348 28.7402C24.3289 28.7402 28.1348 24.9344 28.1348 20.2402C28.1348 15.5461 24.3289 11.7402 19.6348 11.7402ZM16.7253 16.2752C16.8635 16.2752 17.0054 16.2744 17.1279 16.2808C17.2795 16.2843 17.4445 16.2954 17.6025 16.6446C17.7902 17.0597 18.1989 18.101 18.2513 18.2065C18.3037 18.3121 18.3409 18.4364 18.2679 18.5745C18.1985 18.7162 18.1624 18.802 18.0604 18.9273C17.9548 19.0492 17.8392 19.2005 17.7436 19.2926C17.638 19.3981 17.529 19.5138 17.6509 19.7242C17.7727 19.9346 18.1958 20.6242 18.8213 21.181C19.6252 21.8992 20.3036 22.12 20.5146 22.2255C20.7257 22.331 20.848 22.3146 20.9698 22.1729C21.0952 22.0348 21.4964 21.5609 21.638 21.3498C21.7761 21.1387 21.9171 21.1752 22.1084 21.2446C22.3025 21.314 23.3375 21.8239 23.5486 21.9294C23.7597 22.035 23.898 22.0872 23.9512 22.1729C24.0057 22.2615 24.0058 22.683 23.8308 23.1746C23.6559 23.6654 22.7967 24.1401 22.4114 24.1734C22.0225 24.2095 21.6596 24.3482 19.8838 23.6491C17.7418 22.8055 16.3909 20.6116 16.2854 20.4699C16.1799 20.3318 15.4277 19.3293 15.4277 18.2951C15.4277 17.2574 15.9717 16.7492 16.1623 16.5381C16.3564 16.327 16.5837 16.2752 16.7253 16.2752Z"
+                                    fill="white" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_518_2703" x1="0.786133" y1="20.2402" x2="38.4833"
+                                        y2="20.2402" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#141442" offset="" />
+                                        <stop offset="1" stop-color="#0400FF" />
+                                    </linearGradient>
+                                    <linearGradient id="paint1_linear_518_2703" x1="19.6347" y1="1.3916" x2="19.6347"
+                                        y2="39.0887" gradientUnits="userSpaceOnUse">
+                                        <stop offset="0.278527" stop-color="#2F2F37" />
+                                        <stop offset="1" stop-color="#2F2F37" stop-opacity="0" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <span>©Файзутдинова Ксения Альбертовна 325</span>
+            </div>
+            <div class="box_foot_2">
+                <span>Служба поддержки</span>
+                <a href="tel:+79178872027">+7 (917) 887-20-27</a>
+                <a href="mailto:kinoplet@gmail.com">kinoplet@gmail.com</a>
+                <a href="https://t.me/durashka03">Написать в поддержку</a>
+            </div>
+            <div class="box_foot_3 box_foot_2">
+                <span>Документы</span>
+                <a href="assets/documents/Offert.docx">Договор оферты</a>
+                <a href="assets/documents/Information.docx">Данные компании</a>
+                <a href="assets/documents/Privacy_Policy.docx">Политика конфиденциальности</a>
+            </div>
+            <div class="responsive_block">
+                <div class="box_foot_1_1 box_foot_1">
+                    <div class="logo_social">
+                        <a href="index.html"><img src="assets/image/footer/image.png" alt=""></a>
+                        <div class="social">
+                            <a href="https://t.me/durashka03"><svg width="49" height="48" viewBox="0 0 49 48"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.544079" y="1.4181" width="47.4143" height="45.6667" rx="22.8334"
+                                        fill="url(#paint0_linear_790_7685)" />
+                                    <rect x="0.544079" y="1.4181" width="47.4143" height="45.6667" rx="22.8334"
+                                        stroke="url(#paint1_linear_790_7685)" stroke-width="0.911842" />
+                                    <path
+                                        d="M33.1219 14.6413C32.8379 14.6538 32.5733 14.7365 32.3404 14.8306C32.1222 14.9183 31.2884 15.2756 29.9752 15.8384C28.6609 16.4016 26.9205 17.1483 25.064 17.9461C21.3511 19.5417 17.1767 21.3377 15.0386 22.257C14.9582 22.2915 14.6777 22.3811 14.3799 22.6134C14.0822 22.8457 13.7656 23.327 13.7656 23.8633C13.7656 24.2958 13.9719 24.7255 14.2315 24.982C14.4911 25.2385 14.7658 25.3652 15.0011 25.4612C15.8548 25.8093 18.5027 26.8921 19.0027 27.0965C19.1787 27.6352 20.1371 30.5649 20.3594 31.2829C20.5059 31.7567 20.6453 32.0535 20.8269 32.289C20.9177 32.4068 21.0233 32.51 21.1512 32.5908C21.2023 32.6232 21.2583 32.648 21.315 32.671L21.3184 32.6727C21.3314 32.6779 21.3427 32.6868 21.3559 32.6914C21.3809 32.7002 21.3976 32.7012 21.431 32.7085C21.5641 32.7514 21.6985 32.7784 21.8184 32.7784C22.3296 32.7784 22.6426 32.497 22.6426 32.497L22.6614 32.4834L25.291 30.2103L28.4804 33.2252C28.5253 33.2886 28.9441 33.863 29.8677 33.863C30.4161 33.863 30.8512 33.5879 31.1305 33.2951C31.4098 33.0023 31.5838 32.6946 31.6578 32.3078V32.3061C31.727 31.9405 34.6663 16.8615 34.6663 16.8615L34.6611 16.882C34.7472 16.4895 34.7697 16.124 34.6748 15.7634C34.5798 15.4027 34.3297 15.0573 34.0195 14.8715C33.7094 14.6857 33.4059 14.6288 33.1219 14.6413ZM32.9581 16.4659C32.9539 16.4914 32.9612 16.4786 32.9547 16.5086L32.953 16.5188L32.9513 16.529C32.9513 16.529 30.0484 31.4151 29.9411 31.9821C29.9489 31.9392 29.913 32.0244 29.8762 32.0758C29.8242 32.04 29.7175 31.994 29.7175 31.994L29.7005 31.9752L25.3439 27.857L22.2638 30.5172L23.1801 26.8509C23.1801 26.8509 28.9083 20.9256 29.2534 20.5807C29.5312 20.3048 29.5896 20.2086 29.5896 20.1135C29.5896 19.986 29.5231 19.8935 29.3745 19.8935C29.2409 19.8935 29.0611 20.0234 28.965 20.0845C27.7129 20.8821 22.2159 24.0836 19.7519 25.5157C19.3603 25.3556 16.6398 24.2428 15.7178 23.8667C15.7248 23.8637 15.7225 23.8648 15.7298 23.8616C17.8684 22.9421 22.041 21.1461 25.7535 19.5507C27.6097 18.7531 29.3513 18.0058 30.6646 17.443C31.9577 16.8889 32.8562 16.5075 32.9581 16.4659Z"
+                                        fill="white" />
+                                    <defs>
+                                        <linearGradient id="paint0_linear_790_7685" x1="1" y1="24.2515" x2="47.5025"
+                                            y2="24.2515" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#141442" offset="" />
+                                            <stop offset="1" stop-color="#0400FF" />
+                                        </linearGradient>
+                                        <linearGradient id="paint1_linear_790_7685" x1="24.2512" y1="1.87402"
+                                            x2="24.2513" y2="46.6289" gradientUnits="userSpaceOnUse">
+                                            <stop offset="0.278527" stop-color="#2F2F37" />
+                                            <stop offset="1" stop-color="#2F2F37" stop-opacity="0" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+
+                            </a>
+                            <a href="https://vk.com/durashka3"><svg width="49" height="49" viewBox="0 0 49 49"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="1.04408" y="0.544079" width="47.4143" height="47.4143" rx="23.7071"
+                                        fill="url(#paint0_linear_790_7687)" />
+                                    <rect x="1.04408" y="0.544079" width="47.4143" height="47.4143" rx="23.7071"
+                                        stroke="url(#paint1_linear_790_7687)" stroke-width="0.911842" />
+                                    <path
+                                        d="M33.3301 13.7656H16.1721C15.1188 13.7656 14.2656 14.6188 14.2656 15.6721V32.8301C14.2656 33.8834 15.1188 34.7365 16.1721 34.7365H33.3301C34.3834 34.7365 35.2365 33.8834 35.2365 32.8301V15.6721C35.2365 14.6188 34.3834 13.7656 33.3301 13.7656ZM30.8145 28.0325L29.0339 28.0573C29.0339 28.0573 28.6497 28.1326 28.1474 27.7856C27.4811 27.3281 26.8529 26.1375 26.363 26.2919C25.8663 26.4501 25.8816 27.5216 25.8816 27.5216C25.8816 27.5216 25.8854 27.7103 25.772 27.8333C25.649 27.9658 25.4078 27.9524 25.4078 27.9524H24.61C24.61 27.9524 22.8503 28.0983 21.2994 26.4816C19.6103 24.7191 18.1176 21.2408 18.1176 21.2408C18.1176 21.2408 18.0299 21.0215 18.1233 20.9091C18.2291 20.7851 18.5141 20.7813 18.5141 20.7813L20.4206 20.7718C20.4206 20.7718 20.5998 20.8033 20.7294 20.8986C20.8352 20.9767 20.8953 21.1235 20.8953 21.1235C20.8953 21.1235 21.2032 21.9042 21.6121 22.6115C22.409 23.9899 22.7788 24.2921 23.0496 24.1443C23.4442 23.9289 23.326 22.1959 23.326 22.1959C23.326 22.1959 23.3336 21.5668 23.1277 21.2865C22.9676 21.0683 22.6664 21.0034 22.5348 20.9872C22.4271 20.9729 22.6025 20.7232 22.8313 20.6107C23.1744 20.4429 23.7807 20.4334 24.4966 20.4401C25.0542 20.4458 25.2153 20.4801 25.4326 20.5335C26.0903 20.6927 25.8673 21.3066 25.8673 22.7793C25.8673 23.2511 25.7824 23.9146 26.1218 24.1329C26.2686 24.2272 26.626 24.1472 27.5173 22.6277C27.9415 21.9071 28.2589 21.0606 28.2589 21.0606C28.2589 21.0606 28.3285 20.91 28.4362 20.8452C28.5468 20.7785 28.6955 20.7994 28.6955 20.7994L30.702 20.7871C30.702 20.7871 31.3045 20.7146 31.4026 20.9882C31.5056 21.2742 31.1777 21.9424 30.3579 23.0357C29.012 24.8316 28.8623 24.6648 29.9804 25.7038C31.048 26.6961 31.2682 27.1784 31.3054 27.2394C31.7468 27.9743 30.8145 28.0325 30.8145 28.0325Z"
+                                        fill="#EFEFEF" />
+                                    <defs>
+                                        <linearGradient id="paint0_linear_790_7687" x1="1.5" y1="24.2512" x2="48.0025"
+                                            y2="24.2512" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#141442" offset="" />
+                                            <stop offset="1" stop-color="#0400FF" />
+                                        </linearGradient>
+                                        <linearGradient id="paint1_linear_790_7687" x1="24.7512" y1="0.999994"
+                                            x2="24.7513" y2="47.5025" gradientUnits="userSpaceOnUse">
+                                            <stop offset="0.278527" stop-color="#2F2F37" />
+                                            <stop offset="1" stop-color="#2F2F37" stop-opacity="0" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+
+                            </a>
+                            <a href="https://wa.me/+79178872027"><svg width="49" height="49" viewBox="0 0 49 49"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.551891" y="0.544079" width="47.4143" height="47.4143" rx="23.7071"
+                                        fill="url(#paint0_linear_790_7689)" />
+                                    <rect x="0.551891" y="0.544079" width="47.4143" height="47.4143" rx="23.7071"
+                                        stroke="url(#paint1_linear_790_7689)" stroke-width="0.911842" />
+                                    <path
+                                        d="M24.2589 13.7656C18.4683 13.7656 13.7734 18.4605 13.7734 24.2511C13.7734 26.2181 14.326 28.0521 15.2684 29.6252L13.8673 34.7365L19.0878 33.3661C20.6146 34.2341 22.3772 34.7365 24.2589 34.7365C30.0495 34.7365 34.7443 30.0416 34.7443 24.2511C34.7443 18.4605 30.0495 13.7656 24.2589 13.7656ZM20.6699 19.3599C20.8403 19.3599 21.0153 19.3589 21.1665 19.3667C21.3535 19.3711 21.557 19.3848 21.7519 19.8156C21.9834 20.3276 22.4876 21.6121 22.5523 21.7423C22.6169 21.8725 22.6627 22.0259 22.5727 22.1963C22.4871 22.3711 22.4426 22.4768 22.3167 22.6315C22.1866 22.7818 22.0439 22.9684 21.9259 23.082C21.7957 23.2122 21.6613 23.355 21.8116 23.6145C21.9619 23.874 22.4838 24.7248 23.2554 25.4116C24.2471 26.2976 25.0839 26.5699 25.3443 26.7001C25.6047 26.8302 25.7555 26.81 25.9058 26.6352C26.0604 26.4648 26.5553 25.8802 26.7301 25.6198C26.9004 25.3594 27.0744 25.4044 27.3103 25.4901C27.5497 25.5757 28.8265 26.2046 29.0869 26.3348C29.3473 26.465 29.518 26.5295 29.5835 26.6352C29.6508 26.7444 29.6509 27.2644 29.435 27.8708C29.2192 28.4763 28.1594 29.0619 27.684 29.103C27.2043 29.1475 26.7566 29.3186 24.5661 28.4562C21.9237 27.4155 20.2574 24.7091 20.1272 24.5344C19.997 24.364 19.0691 23.1273 19.0691 21.8516C19.0691 20.5715 19.7402 19.9446 19.9753 19.6842C20.2147 19.4238 20.4951 19.3599 20.6699 19.3599Z"
+                                        fill="white" />
+                                    <defs>
+                                        <linearGradient id="paint0_linear_790_7689" x1="1.00781" y1="24.2512"
+                                            x2="47.5103" y2="24.2512" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#141442" offset="" />
+                                            <stop offset="1" stop-color="#0400FF" />
+                                        </linearGradient>
+                                        <linearGradient id="paint1_linear_790_7689" x1="24.259" y1="0.999994"
+                                            x2="24.2591" y2="47.5025" gradientUnits="userSpaceOnUse">
+                                            <stop offset="0.278527" stop-color="#2F2F37" />
+                                            <stop offset="1" stop-color="#2F2F37" stop-opacity="0" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box_foot_combined">
+                    <div class="box_foot_2_2 box_foot_2">
+                        <span data-toggle="box_foot_2_2">Документы</span>
+                        <div class="links">
+                            <a href="assets/documents/Offert.docx">Договор оферты</a>
+                            <a href="assets/documents/Information.docx">Данные компании</a>
+                            <a href="assets/documents/Privacy_Policy.docx">Политика конфиденциальности</a>
+                        </div>
+                    </div>
+                    <div class="box_foot_3_3 box_foot_2">
+                        <span data-toggle="box_foot_3_3">Служба поддержки</span>
+                        <div class="links">
+                            <a href="tel:+79178872027">+7 (917) 887-20-27</a>
+                            <a href="mailto:kinoplet@gmail.com">kinoplet@gmail.com</a>
+                            <a href="https://t.me/durashka03">Написать <br> в поддержку</a>
+                        </div>
+                    </div>
+                </div>
+                <span class="responsive_copyright">©Файзутдинова Ксения Альбертовна 325</span>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+    <script src="assets/js/main.js"></script>
+
+    <!-- бургер меню -->
+    <script>
+        const burgerMenuToggle = document.querySelector('.burger_menu_toggle');
+        const burgerMenuClose = document.querySelector('.burger_menu_close');
+        const burgerMenu = document.querySelector('.burger_menu');
+
+        function openBurgerMenu() {
+            burgerMenu.classList.add('active');
+        }
+
+        function closeBurgerMenu() {
+            burgerMenu.classList.remove('active');
+        }
+
+        burgerMenuToggle.addEventListener('click', () => {
+            openBurgerMenu();
+        });
+
+        burgerMenuClose.addEventListener('click', () => {
+            closeBurgerMenu();
+        });
+
+        document.addEventListener('click', (event) => {
+            if (!burgerMenu.contains(event.target) && !burgerMenuToggle.contains(event.target)) {
+                closeBurgerMenu();
+            }
+        });
+    </script>
+
+    <script>
+            const toggles = document.querySelectorAll('[data-toggle]');
+
+            toggles.forEach(toggle => {
+                toggle.addEventListener('click', () => {
+                    const targetId = toggle.getAttribute('data-toggle');
+                    const links = document.querySelector(`.${targetId} .links`);
+                    toggles.forEach(otherToggle => {
+                        if (otherToggle !== toggle) {
+                            const otherTargetId = otherToggle.getAttribute('data-toggle');
+                            const otherLinks = document.querySelector(`.${otherTargetId} .links`);
+                            if (otherLinks) {
+                                otherLinks.classList.remove('active');
+                            }
+                        }
+                    });
+                    if (links) {
+                        links.classList.toggle('active');
+                    }
+                });
+            });
+        </script>
+</body>
+
+</html>
